@@ -5,6 +5,8 @@ import java.util.Map;
 
 /**
  * Created by chenli
+ *
+ * 定义一个ViewObject对象来存储关联的数据
  */
 public class ViewObject {
     private Map<String, Object> objs = new HashMap<String, Object>();
