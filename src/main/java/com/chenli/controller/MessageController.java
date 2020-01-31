@@ -96,8 +96,8 @@ public class MessageController {
             messageService.addMessage(msg);
             return ToutiaoUtil.getJSONString(msg.getId());
         } catch (Exception e) {
-            logger.error("增加评论失败" + e.getMessage());
-            return ToutiaoUtil.getJSONString(1, "插入评论失败");
+            logger.error("增加消息失败" + e.getMessage());
+            return ToutiaoUtil.getJSONString(1, "插入消息失败");
         }
     }
 }

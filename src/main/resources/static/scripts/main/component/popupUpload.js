@@ -21,7 +21,7 @@ var oPopupUpload = new PopupUpload({
                     '</div>',
                 '</div>',
                   '<div class="form-group"><label class="col-sm-2 control-label">标题</label><div class="col-sm-10"><input class="js-title form-control" type="text"></div></div>',
-                  '<div class="form-group"><label class="col-sm-2 control-label">内容</label><div class="col-sm-10"><input class="js-link form-control" type="text"></div></div>',
+                  '<div class="form-group"><label class="col-sm-2 control-label">链接</label><div class="col-sm-10"><input class="js-link form-control" type="text"></div></div>',
                   '<div class="form-group">',
                         '<div class="col-lg-10 col-lg-offset-2">',
                             '<input type="submit" value="提交" class="js-submit btn btn-default btn-info">',

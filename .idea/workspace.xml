@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2689bd9a-2404-4a24-8bba-e88c40e076b0" name="Default" comment="1、添加了一些注释&#10;2、把最终通知改成了后置通知&#10;3、完善了后置通知的代码">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="2689bd9a-2404-4a24-8bba-e88c40e076b0" name="Default" comment="修改了一下前端页面以及添加了一些注释">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenli/model/ViewObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenli/model/ViewObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/chenli/InitDatabaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/chenli/InitDatabaseTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenli/configuration/ToutiaoWebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenli/configuration/ToutiaoWebConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenli/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenli/controller/MessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenli/controller/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenli/controller/NewsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenli/service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenli/service/MessageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenli/service/QiniuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenli/service/QiniuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenli/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenli/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/main/component/popupUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/main/component/popupUpload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/chenli/LikeServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/chenli/LikeServiceTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,20 +81,17 @@
   <component name="PropertiesComponent">
     <property name="ChangesTree.GroupingKeys" value="" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559739459969" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/upload/01ace19952f44b7fa6254ddaeda8b458.jpg" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\sparta\course\toutiao\src\main\resources\static\scripts\main" />
-      <recent name="D:\sparta\course\toutiao\src\main\resources\templates" />
-      <recent name="D:\sparta\course\toutiao\src\main\resources\static\scripts\main\component" />
-      <recent name="D:\sparta\course\toutiao\src\main\resources\static\scripts\main\base" />
-      <recent name="D:\sparta\course\toutiao\src\main\resources\static\styles" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\sparta\course\toutiao\src\main\resources\static\scripts\main\util" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.nowcoder" />
@@ -96,9 +100,121 @@
       <recent name="com.nowcoder.dao" />
       <recent name="com.nowcoder.interceptor" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\sparta\course\toutiao\src\main\resources\static\scripts\main\util" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\sparta\course\toutiao\src\main\resources\static\scripts\main" />
+      <recent name="D:\sparta\course\toutiao\src\main\resources\templates" />
+      <recent name="D:\sparta\course\toutiao\src\main\resources\static\scripts\main\component" />
+      <recent name="D:\sparta\course\toutiao\src\main\resources\static\scripts\main\base" />
+      <recent name="D:\sparta\course\toutiao\src\main\resources\static\styles" />
     </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/uploadImage" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveFileToSend" value="true" />
+          <option name="isFileUpload" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="D:/upload/01ace19952f44b7fa6254ddaeda8b458.jpg" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/uploadImage" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/Image" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/uploadImage" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/upload" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Application.ToutiaoApplication">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -399,7 +515,12 @@
       <workItem from="1579420450854" duration="2442000" />
       <workItem from="1579996113315" duration="2555000" />
       <workItem from="1580113300429" duration="1132000" />
-      <workItem from="1580115436115" duration="8069000" />
+      <workItem from="1580115436115" duration="9340000" />
+      <workItem from="1580182333533" duration="3099000" />
+      <workItem from="1580215890157" duration="3649000" />
+      <workItem from="1580279988308" duration="6863000" />
+      <workItem from="1580355327138" duration="8800000" />
+      <workItem from="1580442474108" duration="3330000" />
     </task>
     <task id="LOCAL-00001" summary="第四次课参考代码。">
       <created>1467538081171</created>
@@ -429,7 +550,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580116327874</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="添加一些注释信息">
+      <created>1580130224913</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1580130224913</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -476,6 +604,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
@@ -489,33 +627,55 @@
     <MESSAGE value="This is my firstly commit" />
     <MESSAGE value="修改了工作小组" />
     <MESSAGE value="1、添加了一些注释&#10;2、把最终通知改成了后置通知&#10;3、完善了后置通知的代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、添加了一些注释&#10;2、把最终通知改成了后置通知&#10;3、完善了后置通知的代码" />
+    <MESSAGE value="添加一些注释信息" />
+    <MESSAGE value="修改了一下前端页面以及添加了一些注释" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改了一下前端页面以及添加了一些注释" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="275" y="25" key="#HTTP_Proxy" timestamp="1580295270518">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="25" key="#HTTP_Proxy/0.0.1366.728@0.0.1366.728" timestamp="1580295270518" />
     <state x="275" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580123553761">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1580123553761" />
-    <state x="228" y="0" key="CommitChangelistDialog2" timestamp="1580130201161">
+    <state x="480" y="224" key="#com.intellij.ws.actions.HttpClientConvertFromCurlDialog" timestamp="1580295131384">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="228" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580130201161" />
-    <state width="1306" height="231" key="GridCell.Tab.0.bottom" timestamp="1580125338660">
+    <state x="480" y="224" key="#com.intellij.ws.actions.HttpClientConvertFromCurlDialog/0.0.1366.728@0.0.1366.728" timestamp="1580295131384" />
+    <state x="228" y="0" key="CommitChangelistDialog2" timestamp="1580484255532">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="231" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580125338660" />
-    <state width="1306" height="231" key="GridCell.Tab.0.center" timestamp="1580125338660">
+    <state x="228" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580484255532" />
+    <state x="100" y="100" width="1166" height="528" key="DiffContextDialog" timestamp="1580130987166">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="231" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580125338660" />
-    <state width="1306" height="231" key="GridCell.Tab.0.left" timestamp="1580125338659">
+    <state x="100" y="100" width="1166" height="528" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1580130987166" />
+    <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1580295837728">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="231" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580125338659" />
-    <state width="1306" height="231" key="GridCell.Tab.0.right" timestamp="1580125338660">
+    <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580295837728" />
+    <state width="1306" height="231" key="GridCell.Tab.0.bottom" timestamp="1580442955769">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="231" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580125338660" />
+    <state width="1306" height="231" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580442955769" />
+    <state width="1306" height="231" key="GridCell.Tab.0.center" timestamp="1580442955768">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="231" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580442955768" />
+    <state width="1306" height="231" key="GridCell.Tab.0.left" timestamp="1580442955767">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="231" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580442955767" />
+    <state width="1306" height="231" key="GridCell.Tab.0.right" timestamp="1580442955768">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1306" height="231" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580442955768" />
+    <state x="463" y="172" key="RestClientTextRequest" timestamp="1580295825690">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="172" key="RestClientTextRequest/0.0.1366.728@0.0.1366.728" timestamp="1580295825690" />
     <state x="356" y="88" key="RollbackChangesDialog" timestamp="1580125631362">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -524,6 +684,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1580116330916" />
+    <state x="484" y="53" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580394990655">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="484" y="53" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1580394990655" />
     <state x="477" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580123108423">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

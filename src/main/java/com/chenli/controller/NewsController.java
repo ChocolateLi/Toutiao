@@ -96,6 +96,7 @@ public class NewsController {
     }
 
 
+    //图片的展示
     @RequestMapping(path = {"/image"}, method = {RequestMethod.GET})
     @ResponseBody
     public void getImage(@RequestParam("name") String imageName,
@@ -109,6 +110,7 @@ public class NewsController {
         }
     }
 
+    //图片的上传
     @RequestMapping(path = {"/uploadImage/"}, method = {RequestMethod.POST})
     @ResponseBody
     public String uploadImage(@RequestParam("file") MultipartFile file) {
@@ -140,7 +142,7 @@ public class NewsController {
                 news.setUserId(hostHolder.getUser().getId());
             } else {
                 // 设置一个匿名用户
-                news.setUserId(3);
+                news.setUserId(0);
             }
             newsService.addNews(news);
             return ToutiaoUtil.getJSONString(0);

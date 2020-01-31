@@ -21,17 +21,17 @@ import java.util.UUID;
 public class QiniuService {
     private static final Logger logger = LoggerFactory.getLogger(QiniuService.class);
     //设置好账号的ACCESS_KEY和SECRET_KEY
-    String ACCESS_KEY = "abNXnXBIlI6viRaOeRY6Hk-zc3V-NpjLcGfYz5kD";
-    String SECRET_KEY = "QP7Xja3FmP1Zyl-oxwQDCb7T6wCoEFKoO-0vht_5";
+    String ACCESS_KEY = "***";
+    String SECRET_KEY = "***";
     //要上传的空间
-    String bucketname = "chenli";
+    String bucketname = "nowcoder";
 
     //密钥配置
     Auth auth = Auth.create(ACCESS_KEY, SECRET_KEY);
     //创建上传对象
     UploadManager uploadManager = new UploadManager();
 
-    private static String QINIU_IMAGE_DOMAIN = "http://7xsetu.com1.z0.glb.clouddn.com/";
+    private static String QINIU_IMAGE_DOMAIN = "http://81rjuu.s3-cn-south-1.qiniucs.com/";
 
     //简单上传，使用默认策略，只需要设置上传的空间名就可以了
     public String getUpToken() {

@@ -14,6 +14,7 @@ import java.util.List;
 public class MessageService {
     @Autowired
     MessageDAO messageDAO;
+
     public int addMessage(Message message) {
         return messageDAO.addMessage(message);
     }
