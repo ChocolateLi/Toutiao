@@ -26,17 +26,17 @@ public class LoginExceptionHandler implements EventHandler {
 
     @Override
     public void doHandle(EventModel model) {
-        // 判断是否有异常登陆
+        // 判断是否有异常登陆,这里没写，只是简单的发送一些信息
         Message message = new Message();
         message.setToId(model.getActorId());
-        message.setContent("你上次的登陆ip异常");
-        message.setFromId(3);
+        message.setContent("欢迎登陆力哥资讯网站，没有你看不到的资讯，只有你想不到的资讯");
+        message.setFromId(3);//这里可以设置系统id，默认3是系统Id
         message.setCreatedDate(new Date());
         messageService.addMessage(message);
 
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("username", model.getExt("username"));
-        mailSender.sendWithHTMLTemplate(model.getExt("email"), "登陆异常", "mails/welcome.html",
+        mailSender.sendWithHTMLTemplate(model.getExt("email"), "欢迎登陆", "mails/welcome.html",
                 map);
     }
 

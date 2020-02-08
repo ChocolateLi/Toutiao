@@ -2,6 +2,8 @@ package com.chenli.util;
 
 /**
  * Created by chenli
+ * 这个类纯粹是对 key 进行规范
+ * 方便管理和查看
  */
 public class RedisKeyUtil {
     private static String SPLIT = ":";

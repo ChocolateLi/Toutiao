@@ -24,17 +24,18 @@ import java.util.Map;
 @Service
 public class EventConsumer implements InitializingBean, ApplicationContextAware {
     private static final Logger logger = LoggerFactory.getLogger(EventConsumer.class);
-    //把事件组织起来需要这样的参数，哪些事件需用处理器
+    //把所有有关EvenTpye相关的EventHandler全部组织起来
     private Map<EventType, List<EventHandler>> config = new HashMap<EventType, List<EventHandler>>();
+    //全局变量获取所有实现EventHandler接口的类
     private ApplicationContext applicationContext;
 
     @Autowired
     JedisAdapter jedisAdapter;
 
-    //建立映射表，不同的事件对应不同的处理者处理
+    //建立映射表，不同的事件对应不同的处理者处理。初始化之后开始做
     @Override
     public void afterPropertiesSet() throws Exception {
-        //把实现了EventHandler的类全部取出来
+        //把实现了EventHandler的类全部找出来
         Map<String, EventHandler> beans = applicationContext.getBeansOfType(EventHandler.class);
         if (beans != null) {
             for (Map.Entry<String, EventHandler> entry : beans.entrySet()) {
@@ -50,7 +51,7 @@ public class EventConsumer implements InitializingBean, ApplicationContextAware 
             }
         }
 
-        //开一个线程去处理事件，实现异步的操作
+        //阻塞队列，开一个线程去处理事件，实现异步的操作
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -69,6 +70,7 @@ public class EventConsumer implements InitializingBean, ApplicationContextAware 
                             continue;
                         }
 
+                        //通过多态来实现
                         for (EventHandler handler : config.get(eventModel.getType())) {
                             handler.doHandle(eventModel);//找对应的Handler处理
                         }

@@ -31,9 +31,11 @@ public class LikeHandler implements EventHandler {
     public void doHandle(EventModel model) {
         Message message = new Message();
 
-        message.setFromId(5);
-        //message.setToId(model.getEntityOwnerId());
-        message.setToId(model.getActorId());
+        message.setFromId(model.getActorId());
+        //你点了对方的资讯，给对方发个站内信，你赞了它
+        message.setToId(model.getEntityOwnerId());
+        //为了看效果，给自己发一个测试一下
+        //message.setToId(model.getActorId());
         User user = userService.getUser(model.getActorId());
         message.setContent("用户" + user.getName()
                 + "赞了你的资讯,http://127.0.0.1:8080/news/" + model.getEntityId());

@@ -19,7 +19,7 @@ import java.util.Map;
 import java.util.Properties;
 
 /**
- * Created by chenli  // course@qq.com NKnk66
+ * Created by chenli
  * 邮件服务
  */
 @Service
@@ -34,7 +34,7 @@ public class MailSender implements InitializingBean {
                                         String template, Map<String, Object> model) {
         try {
             String nick = MimeUtility.encodeText("力哥大帅比");//邮件的昵称，谁发的
-            InternetAddress from = new InternetAddress(nick + "<course@qq.com>");//邮件地址
+            InternetAddress from = new InternetAddress(nick + "<954357018@qq.com>");//邮件地址
             MimeMessage mimeMessage = mailSender.createMimeMessage();//构造一份邮件
             MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(mimeMessage);
             //这个是邮件的模板，Velocity去渲染（重点）
@@ -56,11 +56,11 @@ public class MailSender implements InitializingBean {
     @Override
     public void afterPropertiesSet() throws Exception {
         mailSender = new JavaMailSenderImpl();
-        mailSender.setUsername("course@qq.com");//用户名（邮箱）
-        mailSender.setPassword("NKnk66");//（密码）应该从数据库里读取出来然后写进去
-        mailSender.setHost("smtp.exmail.qq.com");//发邮件的地址
+        mailSender.setUsername("*****");//用户名（邮箱）
+        mailSender.setPassword("****");//（密码）应该从数据库里读取出来然后写进去
+        mailSender.setHost("smtp.qq.com");//发邮件的地址
         mailSender.setPort(465);//端口号
-        mailSender.setProtocol("smtps");//协议
+        mailSender.setProtocol("smtp");//协议
         mailSender.setDefaultEncoding("utf8");
         Properties javaMailProperties = new Properties();
         javaMailProperties.put("mail.smtp.ssl.enable", true);

@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2689bd9a-2404-4a24-8bba-e88c40e076b0" name="Default" comment="修改了一下前端页面以及添加了一些注释">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenli/configuration/ToutiaoWebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenli/configuration/ToutiaoWebConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenli/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenli/controller/MessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenli/controller/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenli/controller/NewsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenli/service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenli/service/MessageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenli/service/QiniuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenli/service/QiniuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenli/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenli/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/main/component/popupUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/main/component/popupUpload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/chenli/LikeServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/chenli/LikeServiceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenli/async/EventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenli/async/EventConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenli/async/EventModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenli/async/EventModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenli/async/handler/LikeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenli/async/handler/LikeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenli/async/handler/LoginExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenli/async/handler/LoginExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenli/util/JedisAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenli/util/JedisAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenli/util/MailSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenli/util/MailSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenli/util/RedisKeyUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenli/util/RedisKeyUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mails/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mails/welcome.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -521,6 +518,9 @@
       <workItem from="1580279988308" duration="6863000" />
       <workItem from="1580355327138" duration="8800000" />
       <workItem from="1580442474108" duration="3330000" />
+      <workItem from="1580699266309" duration="10835000" />
+      <workItem from="1581062330688" duration="2742000" />
+      <workItem from="1581145294350" duration="264000" />
     </task>
     <task id="LOCAL-00001" summary="第四次课参考代码。">
       <created>1467538081171</created>
@@ -656,22 +656,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580295837728" />
-    <state width="1306" height="231" key="GridCell.Tab.0.bottom" timestamp="1580442955769">
+    <state width="1306" height="231" key="GridCell.Tab.0.bottom" timestamp="1580718832435">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="231" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580442955769" />
-    <state width="1306" height="231" key="GridCell.Tab.0.center" timestamp="1580442955768">
+    <state width="1306" height="231" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580718832435" />
+    <state width="1306" height="231" key="GridCell.Tab.0.center" timestamp="1580718832435">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="231" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580442955768" />
-    <state width="1306" height="231" key="GridCell.Tab.0.left" timestamp="1580442955767">
+    <state width="1306" height="231" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580718832435" />
+    <state width="1306" height="231" key="GridCell.Tab.0.left" timestamp="1580718832435">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="231" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580442955767" />
-    <state width="1306" height="231" key="GridCell.Tab.0.right" timestamp="1580442955768">
+    <state width="1306" height="231" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580718832435" />
+    <state width="1306" height="231" key="GridCell.Tab.0.right" timestamp="1580718832435">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="231" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580442955768" />
+    <state width="1306" height="231" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580718832435" />
     <state x="463" y="172" key="RestClientTextRequest" timestamp="1580295825690">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
